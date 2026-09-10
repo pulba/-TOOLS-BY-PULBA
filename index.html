@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="id">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,8 +19,14 @@
       --max: 1180px;
     }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       background: var(--paper);
@@ -28,8 +35,14 @@
       line-height: 1.5;
     }
 
-    a { color: inherit; }
-    img { display: block; max-width: 100%; }
+    a {
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
 
     .page {
       width: min(calc(100% - 40px), var(--max));
@@ -93,7 +106,9 @@
       transition: width .2s ease;
     }
 
-    nav a:hover::after { width: 100%; }
+    nav a:hover::after {
+      width: 100%;
+    }
 
     .hero {
       display: grid;
@@ -218,11 +233,25 @@
       transform: translateY(-3px);
     }
 
-    .tool:nth-child(1) { grid-column: span 7; }
-    .tool:nth-child(2) { grid-column: span 5; }
-    .tool:nth-child(3) { grid-column: span 4; }
-    .tool:nth-child(4) { grid-column: span 4; }
-    .tool:nth-child(5) { grid-column: span 4; }
+    .tool:nth-child(1) {
+      grid-column: span 7;
+    }
+
+    .tool:nth-child(2) {
+      grid-column: span 5;
+    }
+
+    .tool:nth-child(3) {
+      grid-column: span 4;
+    }
+
+    .tool:nth-child(4) {
+      grid-column: span 4;
+    }
+
+    .tool:nth-child(5) {
+      grid-column: span 4;
+    }
 
     .tool-number {
       font-size: 12px;
@@ -287,7 +316,9 @@
       border-right: 1px solid var(--line);
     }
 
-    .principle:last-child { border-right: 0; }
+    .principle:last-child {
+      border-right: 0;
+    }
 
     .principle strong {
       display: block;
@@ -323,43 +354,87 @@
     }
 
     @media (max-width: 800px) {
-      .page { width: min(calc(100% - 28px), var(--max)); }
-      .topline span:last-child { display: none; }
-      header { min-height: 72px; }
-      nav { gap: 16px; }
-      nav a:nth-child(2) { display: none; }
+      .page {
+        width: min(calc(100% - 28px), var(--max));
+      }
+
+      .topline span:last-child {
+        display: none;
+      }
+
+      header {
+        min-height: 72px;
+      }
+
+      nav {
+        gap: 16px;
+      }
+
+      nav a:nth-child(2) {
+        display: none;
+      }
+
       .hero {
         grid-template-columns: 1fr;
         min-height: auto;
       }
+
       .hero-main {
         padding: 56px 0 48px;
         border-right: 0;
       }
+
       .hero-side {
         min-height: 170px;
         padding: 18px 0;
         border-top: 1px solid var(--line);
       }
+
       .blue-mark {
         width: 62px;
         height: 62px;
         border-width: 8px;
       }
+
       .section-head {
         grid-template-columns: 1fr;
         gap: 12px;
       }
-      .tools { border-left: 0; }
-      .tool:nth-child(n) { grid-column: span 12; min-height: 300px; }
-      .principles { grid-template-columns: 1fr; }
-      .principle { border-right: 0; border-bottom: 1px solid var(--line); }
-      .principle:last-child { border-bottom: 0; }
-      footer { grid-template-columns: 1fr; padding: 28px 0; }
-      .footer-meta { text-align: left; }
+
+      .tools {
+        border-left: 0;
+      }
+
+      .tool:nth-child(n) {
+        grid-column: span 12;
+        min-height: 300px;
+      }
+
+      .principles {
+        grid-template-columns: 1fr;
+      }
+
+      .principle {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .principle:last-child {
+        border-bottom: 0;
+      }
+
+      footer {
+        grid-template-columns: 1fr;
+        padding: 28px 0;
+      }
+
+      .footer-meta {
+        text-align: left;
+      }
     }
   </style>
 </head>
+
 <body>
   <main class="page">
     <div class="topline">
@@ -444,7 +519,7 @@
           </p>
           <div class="tool-meta">
             <span class="tool-type">Document / Office</span>
-            <a class="open" href="https://wordlayout.pulbagrup.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Buka WordLayout Pro">↗</a>
+            <a class="open" href="https://wordlayout.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Buka WordLayout Pro">↗</a>
           </div>
         </article>
 
@@ -511,4 +586,5 @@
     </footer>
   </main>
 </body>
+
 </html>
